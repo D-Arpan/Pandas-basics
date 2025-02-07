@@ -1,66 +1,44 @@
-# Employee Data Analysis with Pandas
+# Basic Employee Data Analysis with Pandas
 
-## 📌 Project Description
-This project is a simple **Employee Data Analysis** tool using Python and Pandas, written in a **Jupyter Notebook**. It demonstrates how to create, manipulate, and filter data in a Pandas DataFrame. The dataset consists of employee details such as **Name, Age, City, Salary, and Performance Score**.
+This repository contains a simple demonstration of how to create, manipulate, and analyze a dataset using **Pandas** in Python. The dataset consists of employee details such as **Name, Age, City, Salary, and Performance Score**.
 
-## 🚀 Features
-- **Create a DataFrame** from a dictionary.
-- **Save DataFrame** in CSV, Excel, and JSON formats.
-- **Retrieve basic information** (shape, columns, data types, statistics, etc.).
-- **Filter rows** based on conditions.
-- **Select single or multiple columns.**
-- **Apply multi-condition filtering** using AND (`&`) and OR (`|`).
+## Dataset
+The dataset includes the following employees:
 
-## 🛠 Installation & Setup
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-2. **Install dependencies**
-   This project requires **Python** and **Pandas**. Install them using:
-   ```bash
-   pip install pandas
-   ```
-3. **Run the Jupyter Notebook**
-   Open Jupyter Notebook and load the **.ipynb** file:
-   ```bash
-   jupyter notebook
-   ```
+| Name                  | Age | City          | Salary | Performance Score |
+|----------------------|-----|--------------|--------|------------------|
+| Jon Snow            | 25  | Westros      | 50000  | 99               |
+| Ross Gellar         | 32  | New York     | 30000  | 70               |
+| Ragnar Loathbroke   | 55  | Scandanavia  | 40000  | 85               |
+| Thomas Shelby       | 35  | London       | 25000  | 42               |
+| Adil Qadri          | 50  | Maqsadnagar  | 12000  | 51               |
+| Chikni Chameli      | 18  | Sheelapur    | 52000  | 98               |
+| Genduji Mahaprabhu  | 25  | Chakdaha     | 51000  | 95               |
+| Linon Kumar Ghosh   | 15  | Shimurali    | 23000  | 90               |
+| Panda Biswas        | 69  | Pompom land  | 69000  | 58               |
+| Tarini Charan Barujje | 69 | Dholakpur   | 70000  | 77               |
 
-## 📂 Project Files
-- `employee_data_analysis.ipynb` → Jupyter Notebook with all analysis
-- `mydataframe.csv` → Saved CSV file
-- `mydataframe.xlsx` → Saved Excel file
-- `mydataframe.json` → Saved JSON file
+## Features of the Project
+- **Creating a DataFrame**: The employee data is stored in a Pandas DataFrame.
+- **Saving the DataFrame**: The data is exported in multiple formats:
+  - CSV (`mydataframe.csv`)
+  - Excel (`mydataframe.xlsx`)
+  - JSON (`mydataframe.json`)
+- **Data Exploration**:
+  - Displaying the shape of the data (number of rows and columns)
+  - Listing column names
+  - Viewing data information (`df.info()`)
+  - Generating summary statistics (`df.describe()`)
+- **Data Selection and Filtering**:
+  - Selecting single or multiple columns
+  - Filtering rows based on conditions (salary, performance score, age, etc.)
 
-## 📌 Usage
-1. Run the notebook and execute each cell step by step.
-2. The script will generate **statistical insights** and **filtered datasets**.
-3. Modify the dataset or filtering conditions as needed.
-
-## 🏆 Example Outputs
-- **Employees with High Salary (>35,000) and High Performance Score (>25):**
-  ```
-  Name                 Salary   Performance Score
-  Jon Snow            50000         25
-  Ragnar Loathbroke   40000         26
-  Chikni Chameli      52000         26
-  Genduji Mahaprabhu  51000         29
-  ```
-- **Employees with Salary > 50,000 OR Age < 30:**
-  ```
-  Name                 Salary   Age
-  Jon Snow            50000    25
-  Chikni Chameli      52000    18
-  Genduji Mahaprabhu  51000    25
-  Linon Kumar Ghosh   23000    15
-  ```
-
-## 🔥 Future Improvements
-- Add **interactive visualizations** using Matplotlib/Seaborn.
-- Implement **salary comparison** using NumPy.
-- Expand dataset with more employee details.
+## Usage
+To run this project, make sure you have Python and Pandas installed. You can install Pandas using:
+```sh
+pip install pandas
+```
+Then, run the script in Jupyter Notebook or any Python IDE to explore the dataset and filtering techniques.
 
 
 
